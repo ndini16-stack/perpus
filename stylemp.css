@@ -309,7 +309,7 @@ footer {
 
 
     .grid-buku {
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
