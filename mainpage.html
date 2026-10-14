@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Satoernus</title>
+    <link rel="stylesheet" href="stylemp.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            📚
+            <div>
+                <h2>Layanan Perpustakaan Satoernus</h2>
+                <p>Tempat dimana siswa/i mencari buku yang dibutuhkan</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="mainpage">Beranda</a>
+            <a href="#buku">Koleksi Buku</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <section class="judul">
+        <h1>Koleksi Buku</h1>
+        <h2>Temukan Buku Favoritmu</h2>
+        <p>
+            Berbagai macam buku yang tersedia di perpustakaan sekolah.
+        </p>
+    </section>
+
+    <section class="buku" id="buku">
+
+        <div class="kategori">
+            <h2>Novel</h2>
+
+            <div class="grid-buku">
+                <div class="kartu" onclick="bukaDetail(
+                    'Bumi',
+                    'Tere Liye',
+                    'bumi.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="bumi.jpg" alt="Novel 1">
+                    </div>
+
+                    <div class="info">
+                        <h3>Bumi</h3>
+                        <p>Tere Liye</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Hujan',
+                    'Tere Liye',
+                    'hujan.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="hujan.jpg" alt="Novel 2">
+                    </div>
+
+                    <div class="info">
+                        <h3>Hujan</h3>
+                        <p>Tere Liye</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Pulang',
+                    'Tere Liye',
+                    'pulang.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="pulang.jpg" alt="Novel 3">
+                    </div>
+
+                    <div class="info">
+                        <h3>Pulang</h3>
+                        <p>Tere Liye</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Hello',
+                    'Tere Liye',
+                    'hello.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="hello.jpg" alt="Novel 4">
+                    </div>
+
+                    <div class="info">
+                        <h3>Hello</h3>
+                        <p>Tere Liye</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="kategori">
+            <h2>📘 Buku Mata Pelajaran</h2>
+
+            <div class="grid-buku">
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Buku Bahasa Indonesia',
+                    'Pipit Dwi Komariah',
+                    'b.indo2.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="b.indo2.jpg" alt="Buku Bahasa Indonesia">
+                    </div>
+
+                    <div class="info">
+                        <h3>Buku Bahasa Indonesia</h3>
+                        <p>Pipit Dwi Komariah</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Buku Sejarah',
+                    'Sari Oktafiana',
+                    'sejarah.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="sejarah.jpg" alt="Buku sejarah">
+                    </div>
+
+                    <div class="info">
+                        <h3>Buku Sejarah</h3>
+                        <p>Sari Oktafiana</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Buku Pendidikan Pancasila',
+                    'Fuad Aljihad',
+                    'ppkn2.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="ppkn2.jpg" alt="Buku Pendidikan Pancasila">
+                    </div>
+
+                    <div class="info">
+                        <h3>Buku Pendidikan Pancasila</h3>
+                        <p>Fuad Aljihad</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Buku Informatika',
+                    'Andi Novianto',
+                    'informatika.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="informatika.jpg" alt="Buku Informatika">
+                    </div>
+
+                    <div class="info">
+                        <h3>Buku Informatika</h3>
+                        <p>Andi Novianto</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="kategori">
+            <h2>📗 Buku Sejarah</h2>
+
+            <div class="grid-buku">
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Sejarah Dunia',
+                    'Susan Wise Bauer',
+                    'Sejarah Dunia.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="Sejarah Dunia.jpg" alt="Sejarah Dunia">
+                    </div>
+
+                    <div class="info">
+                        <h3>Sejarah Dunia</h3>
+                        <p>Susan Wise Bauer</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Sejarah Islam',
+                    'Dr.Muhammad Suhail Thaqqusy',
+                    'Sejarah Islam.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="Sejarah Islam.jpg" alt="Sejarah Islam">
+                    </div>
+
+                    <div class="info">
+                        <h3>Sejarah Islam</h3>
+                        <p>Dr.Muhammad Suhail Thaqqusy</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Sejarah Kerajaan Majapahit',
+                    'Kurnia Alif Fahmi',
+                    'Kerajaan Majapahit.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="Kerajaan Majapahit.jpg" alt="Sejarah Kerajaan Majapahit">
+                    </div>
+
+                    <div class="info">
+                        <h3>Sejarah Kerajaan Majapahit</h3>
+                        <p>Kurnia Alif Fahmi</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Sejarah Kampung Tanjung Jan',
+                    'Hiasintus Habibie, S. Pd dan Sabalius Uhai, SST. Par., M. Par., CHE',
+                    'kampung tanjung jan.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="kampung tanjung jan.jpg" alt="Sejarah Kampung Tanjung Jan">
+                    </div>
+
+                    <div class="info">
+                        <h3>Sejarah Kampung Tanjung Jan</h3>
+                        <p>Hiasintus Habibie, S. Pd dan Sabalius Uhai, SST. Par., M. Par., CHE</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="kategori">
+            <h2>📙 Kamus</h2>
+
+            <div class="grid-buku">
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Kamus Inggris Indonesia',
+                    'John M.Echols, Hassan Shadily',
+                    'Kamus inggris indonesia.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="Kamus inggris indonesia.jpg" alt="Kamus Inggris Indonesia">
+                    </div>
+
+                    <div class="info">
+                        <h3>Kamus inggris Indonesia</h3>
+                        <p>John M.Echols, Hassan Shadily</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Kamus lengkap Inggris',
+                    'Niswatin Nurul Hidayati, M.A. dan Zewitra',
+                    'kamus lengkap inggris.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="kamus lengkap inggris.jpg" alt="Kamus lengkap Inggris">
+                    </div>
+
+                    <div class="info">
+                        <h3>Kamus lengkap Inggris</h3>
+                        <p>Niswatin Nurul Hidayati, M.A. dan Zewitra</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Kamus Mandarin',
+                    'Camilla',
+                    'kamus mandarin.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="kamus mandarin.jpg" alt="Kamus Mandarin">
+                    </div>
+
+                    <div class="info">
+                        <h3>Kamus Mandarin</h3>
+                        <p>Camilla</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Kamus Prancis',
+                    'Tim Litbang Bahasa',
+                    'kamus prancis.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="kamus prancis.jpg" alt="Kamus Prancis">
+                    </div>
+
+                    <div class="info">
+                        <h3>Kamus Prancis</h3>
+                        <p>Tim Litbang Bahasa</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="kategori">
+            <h2>📓 Komik</h2>
+
+            <div class="grid-buku">
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Spiderman',
+                    'Zeb Wells',
+                    'spiderman.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="spiderman.jpg" alt="Komik 1">
+                    </div>
+
+                    <div class="info">
+                        <h3>Spiderman</h3>
+                        <p>Zeb Wells</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Hulk',
+                    'Bill Everett dan Roy Thomas',
+                    'Hulk.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="hulk.jpg" alt="Komik 2">
+                    </div>
+
+                    <div class="info">
+                        <h3>Hulk</h3>
+                        <p>Bill Everett dan Roy Thomas</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Naruto',
+                    'Masashi Kishimoto',
+                    'Naruto.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="naruto.jpg" alt="Komik 3">
+                    </div>
+
+                    <div class="info">
+                        <h3>Naruto</h3>
+                        <p>Masashi Kishimoto</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+
+                <div class="kartu" onclick="bukaDetail(
+                    'Variant Covers',
+                    'Daniel Wallace',
+                    'Variant Covers.jpg',
+                    'Tersedia'
+                )">
+                    <div class="cover">
+                        <img src="Variant Covers.jpg" alt="Komik 4">
+                    </div>
+
+                    <div class="info">
+                        <h3>Variant Covers</h3>
+                        <p>Daniel Wallace</p>
+                        <span>Tersedia</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="detail" id="detail">
+
+        <div class="detail-box">
+
+            <button class="tutup" onclick="tutupDetail()">×</button>
+
+            <h2>Detail Buku</h2>
+
+            <img id="detailCover" src="" alt="Cover Buku">
+
+            <h3 id="detailJudul">Judul Buku</h3>
+
+            <p id="detailPenulis">Penulis: -</p>
+
+            <span id="detailStatus">Tersedia</span>
+
+            <button class="kembali" onclick="tutupDetail()">
+                ← Kembali
+            </button>
+
+        </div>
+
+    </div>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Perpustakaan</h2>
+
+        <p>
+            Perpustakaan sekolah menyediakan berbagai koleksi
+            buku untuk mendukung kegiatan belajar dan meningkatkan
+            minat membaca siswa.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Perpustakaan Sekolah</p>
+    </footer>
+
+
+    <script src="scriptmp.js"></script>
+
+</body>
+</html>
